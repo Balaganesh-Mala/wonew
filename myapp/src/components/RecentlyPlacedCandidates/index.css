@@ -1,0 +1,43 @@
+.user-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 100%;
+}
+.user-content::-webkit-scrollbar {
+  display: none;
+}
+.user-pic {
+  width: 30%;
+  height: 100px;
+  border-radius: 5px;
+}
+ .user-content .student-name {
+  font-size: 12px;
+  color: rgb(1, 1, 68);
+}
+.user-content .student-designation{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin: 3px 0px;
+    justify-content: space-between;
+}
+ .user-content p {
+  font-size: 8px;
+  color: rgb(104, 103, 103);
+}
+.user-feedback-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.1);
+  height: 130px;
+}
+.user-content .compant-logo{
+    width: 20%;
+}

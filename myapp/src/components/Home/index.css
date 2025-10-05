@@ -1,0 +1,183 @@
+.home-container {
+  height: 89vh;
+  display: grid;
+  grid-template-columns: 250px 1fr 25%; /* ✅ only two columns */
+  gap: 10px; /* small spacing between sidebar and content */
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  overflow-x: hidden; /* ✅ prevent right-side scroll */
+}
+
+.side-bar {
+  background-image: linear-gradient(to right, #0d282e, #163f42);
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 25px 2px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  color: white;
+}
+.side-bar .icons-box {
+  display: flex;
+  column-gap: 10px;
+  padding: 13px;
+  border-radius: 8px;
+  margin: 5px 5px 10px 5px;
+  cursor: pointer;
+  font-weight: 300;
+}
+.side-bar .icons-box:hover {
+  background-color: rgba(128, 128, 128, 0.266);
+}
+.active-box {
+  background-color: rgba(128, 128, 128, 0.266);
+  color: rgb(127, 242, 255);
+  font-weight: 500 !important;
+}
+.right-bar {
+  background-image: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.1);
+  color: black;
+  position: sticky;
+  top: 0;
+}
+.right-bar .last-manth-updates {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 10px;
+  margin: 0;
+}
+.right-bar .last-manth-updates .time-text {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  padding: 3px 10px;
+  background-color: rgba(201, 249, 201, 0.548);
+  border-radius: 10px;
+}
+.annoucement-conatainer {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin-top: 25px;
+}
+.content {
+  height: 100%;
+  overflow-x: hidden; /* ✅ ensures no side scroll inside main content */
+}
+
+.coures-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+  background-color: transparent; /* optional */
+  width: 100%;
+  box-sizing: border-box;
+}
+.mobile-footer {
+  display: none;
+}
+.coures-container::-webkit-scrollbar {
+  display: none;
+}
+.banner {
+  margin-bottom: 20px;
+}
+
+.slider-wrapper {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots li button:before {
+  color: #007bff;
+}
+.date-box {
+  background-image: url("https://ik.imagekit.io/izqq5ffwt/MERN%20Stack%20Developer%20(4).png");
+  background-size: cover;
+  border: 1px solid #0d282e;
+  color: #0f172a;
+  text-align: end;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.day-text {
+  font-size: 30px;
+  font-weight: 250;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.date-text {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 0 0 0;
+  text-transform: capitalize;
+}
+.announcement-card {
+  height: 50%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accounsement-img {
+  width: 200px;
+}
+@media (max-width: 767px) {
+  .home-container {
+    height: 92vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+
+  .side-bar,
+  .right-bar {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f172a;
+    color: white;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .mobile-footer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-footer li {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
