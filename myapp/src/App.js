@@ -15,7 +15,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import "./App.css";
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/">
     <Switch>
       <Route path="/login" component={Login} />
       <Route exact path="/registration" component={Registration} />
