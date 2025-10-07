@@ -18,6 +18,7 @@ import { MdOutlineAccessTime } from "react-icons/md";
 import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const frentendTechnologies = "FRENTEND";
 const backendTechnologies = "BACKEND";
@@ -26,7 +27,7 @@ const database = "DATABASE";
 const couresDetails = [
   {
     id: uuidv4(),
-    title: "HTML",
+    title: "HTML & CSS",
     category: "FRENTEND",
     discription:
       "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
@@ -35,7 +36,7 @@ const couresDetails = [
   },
   {
     id: uuidv4(),
-    title: "CSS",
+    title: "Responsive Website",
     category: "FRENTEND",
     discription:
       "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
@@ -252,34 +253,46 @@ const Home = () => {
       <Navbar />
       <div className="home-container">
         <aside className="side-bar">
-          <div className="icons-box active-box">
-            <HiOutlineHome />
-            <p>Home</p>
-          </div>
+          <Link to="/" className="link">
+            <div className="icons-box active-box">
+              <HiOutlineHome />
+              <p>Home</p>
+            </div>
+          </Link>
           <div className="icons-box">
             <GiBookshelf />
             <p>Courses</p>
           </div>
-          <div className="icons-box">
-            <BsChatLeftText />
-            <p>Support</p>
-          </div>
-          <div className="icons-box">
-            <BsBag />
-            <p>Jobs</p>
-          </div>
-          <div className="icons-box">
-            <GiWhiteBook />
-            <p>Study Material</p>
-          </div>
-          <div className="icons-box">
-            <BsRobot />
-            <p>Mock Interview</p>
-          </div>
-          <div className="icons-box">
-            <VscFeedback />
-            <p>Feedback</p>
-          </div>
+          <Link to="/support" className="link">
+            <div className="icons-box">
+              <BsChatLeftText />
+              <p>Support</p>
+            </div>
+          </Link>
+          <Link to="/jobs" className="link">
+            <div className="icons-box">
+              <BsBag />
+              <p>Jobs</p>
+            </div>
+          </Link>
+          <Link to="/material" className="link">
+            <div className="icons-box">
+              <GiWhiteBook />
+              <p>Study Material</p>
+            </div>
+          </Link>
+          <Link to="/mock-interview" className="link">
+            <div className="icons-box">
+              <BsRobot />
+              <p>Mock Interview</p>
+            </div>
+          </Link>
+          <Link to="/feedback" className="link">
+            <div className="icons-box">
+              <VscFeedback />
+              <p>Feedback</p>
+            </div>
+          </Link>
         </aside>
 
         <main className="content">
@@ -336,18 +349,26 @@ const Home = () => {
 
         <footer className="mobile-footer">
           <ul>
-            <li className="active-box">
-              <HiOutlineHome />
-            </li>
-            <li>
-              <GiWhiteBook />
-            </li>
-            <li>
-              <BsChatLeftText />
-            </li>
-            <li>
-              <BsBag />
-            </li>
+            <Link to="/" className="link">
+              <li className="active-box">
+                <HiOutlineHome />
+              </li>
+            </Link>
+            <Link to="/material" className="link">
+              <li>
+                <GiWhiteBook />
+              </li>
+            </Link>
+            <Link to="/support" className="link">
+              <li>
+                <BsChatLeftText />
+              </li>
+            </Link>
+            <Link to="/jobs" className="link">
+              <li>
+                <BsBag />
+              </li>
+            </Link>
           </ul>
         </footer>
       </div>

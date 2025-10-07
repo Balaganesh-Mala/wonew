@@ -7,6 +7,7 @@ import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import htmlTopics from "../data/HtmlTopics";
 import cssTopics from "../data/CssTopics";
 import jsTopics from "../data/JsTopics";
+import pythonTopics from "../data/PythonTopics"
 
 import "./index.css";
 
@@ -16,9 +17,10 @@ const VideoPage = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
   let topics = [];
-  if (courseName === "html") topics = htmlTopics;
-  else if (courseName === "css") topics = cssTopics;
+  if (courseName === "html & css") topics = htmlTopics;
+  else if (courseName === "responsive website") topics = cssTopics;
   else if (courseName === "javascript") topics = jsTopics;
+  else if (courseName === "python") topics = pythonTopics;
 
   return (
     <>
@@ -41,7 +43,7 @@ const VideoPage = () => {
                 className={selectedVideo?.title === topic.title ? "active" : ""}
                 onClick={() => {
                   setSelectedVideo(topic);
-                  setSidebarVisible(false); // auto-hide after selecting topic (mobile)
+                  setSidebarVisible(false); 
                 }}
               >
                 {topic.title}

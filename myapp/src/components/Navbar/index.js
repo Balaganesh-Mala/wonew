@@ -34,22 +34,22 @@ const Navbar = (props) => {
         </div>
         <ul className="list-container">
           <li className="list-items">
-            <Link to="/" className="link">
+            <Link to="/" className="nav-links">
               Home
             </Link>
           </li>
           <li className="list-items">
-            <Link to="/courses" className="link">
+            <Link to="/" className="nav-links">
               Courses
             </Link>
           </li>
           <li className="list-items">
-            <Link to="/support" className="link">
+            <Link to="/support" className="nav-links">
               Support
             </Link>
           </li>
           <li className="list-items">
-            <Link to="/jobs" className="link">
+            <Link to="/jobs" className="nav-links">
               Jobs
             </Link>
           </li>

@@ -1,14 +1,18 @@
 .home-container {
   height: 89vh;
   display: grid;
-  grid-template-columns: 250px 1fr 25%; /* ✅ only two columns */
-  gap: 10px; /* small spacing between sidebar and content */
+  grid-template-columns: 250px 1fr 25%; 
+  gap: 10px; 
   margin: 0;
   padding: 0 10px;
   box-sizing: border-box;
-  overflow-x: hidden; /* ✅ prevent right-side scroll */
+  overflow-x: hidden; 
 }
 
+.link {
+  text-decoration: none;
+  color: white;
+}
 .side-bar {
   background-image: linear-gradient(to right, #0d282e, #163f42);
   height: 100%;
@@ -80,7 +84,7 @@
   scroll-behavior: smooth;
   padding: 10px;
   scroll-snap-type: x mandatory;
-  background-color: transparent; /* optional */
+  background-color: transparent; 
   width: 100%;
   box-sizing: border-box;
 }

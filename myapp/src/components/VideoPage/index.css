@@ -58,6 +58,7 @@
 .right-arrow {
   font-size: 28px;
   cursor: pointer;
+  display: none;
 }
 .topic-heading {
   margin-bottom: 10px;
@@ -69,8 +70,6 @@
   margin: 6px 0px;
   background-color: rgba(128, 128, 128, 0.266);
 }
-
-/* Main video area */
 .video-content {
   flex: 1;
   padding: 20px;
@@ -98,13 +97,11 @@
   box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Placeholder text */
 .select-msg {
   font-size: 18px;
   color: #6b7280;
 }
 
-/* Toggle button */
 .toggle-sidebar-btn {
   display: none;
   position: fixed;
@@ -119,8 +116,10 @@
   cursor: pointer;
 }
 
-/* Mobile view */
 @media (max-width: 768px) {
+  .right-arrow{
+    display: block;
+  }
   .toggle-sidebar-btn {
     display: block;
   }

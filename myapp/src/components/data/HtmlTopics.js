@@ -1,75 +1,35 @@
 const htmlTopics = [
   {
-    title: "Introduction to HTML",
+    title: "Introduction to HTML & CSS",
     url: "https://www.youtube.com/embed/pQN-pnXPaVg",
   },
   {
-    title: "HTML Elements & Tags",
+    title: "CSS Box Model",
     url: "https://www.youtube.com/embed/UB1O30fR-EE",
   },
   {
-    title: "HTML Forms and Inputs",
+    title: "Bootstrap",
     url: "https://www.youtube.com/embed/fNcJuPIZ2WE",
   },
   {
-    title: "IntroduL",
+    title: "Developing Layouts",
     url: "https://www.youtube.com/embed/pQN-pnXPaVg",
   },
   {
-    title: "HTML Elemgs",
+    title: "Website Integration",
     url: "https://www.youtube.com/embed/UB1O30fR-EE",
   },
   {
-    title: "HTML Forms and ts",
+    title: "Rivision",
     url: "https://www.youtube.com/embed/fNcJuPIZ2WE",
   },
   {
-    title: "IntroduTML",
+    title: "Assignments",
     url: "https://www.youtube.com/embed/pQN-pnXPaVg",
   },
   {
-    title: "HTML Elemes",
+    title: "Mock Tests",
     url: "https://www.youtube.com/embed/UB1O30fR-EE",
-  },
-  {
-    title: "HTML Futs",
-    url: "https://www.youtube.com/embed/fNcJuPIZ2WE",
-  },
-  {
-    title: "Intro HTML",
-    url: "https://www.youtube.com/embed/pQN-pnXPaVg",
-  },
-  {
-    title: "HTML Element Tags",
-    url: "https://www.youtube.com/embed/UB1O30fR-EE",
-  },
-  {
-    title: "HTML FoInputs",
-    url: "https://www.youtube.com/embed/fNcJuPIZ2WE",
-  },
-  {
-    title: "Intro to HTML",
-    url: "https://www.youtube.com/embed/pQN-pnXPaVg",
-  },
-  {
-    title: "HTML Elements ",
-    url: "https://www.youtube.com/embed/UB1O30fR-EE",
-  },
-  {
-    title: "HTML Forms ",
-    url: "https://www.youtube.com/embed/fNcJuPIZ2WE",
-  },
-  {
-    title: "Introduction ",
-    url: "https://www.youtube.com/embed/pQN-pnXPaVg",
-  },
-  {
-    title: "Tags",
-    url: "https://www.youtube.com/embed/UB1O30fR-EE",
-  },
-  {
-    title: "Inputs",
-    url: "https://www.youtube.com/embed/fNcJuPIZ2WE",
   },
 ];
 
