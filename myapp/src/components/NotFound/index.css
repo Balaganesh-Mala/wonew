@@ -1,0 +1,37 @@
+.not-found-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  gap: 10px;
+}
+.not-found-img {
+  width: 50%;
+}
+.not-found-card h1 {
+  color: rgb(1, 1, 63);
+  font-size: 26px;
+}
+.not-found-card p {
+  color: rgba(128, 128, 128, 0.463);
+  font-size: 12px;
+  text-align: center;
+}
+.not-found-card button {
+  background-color: #1c5663;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.388);
+}

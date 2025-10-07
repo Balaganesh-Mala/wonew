@@ -98,7 +98,7 @@ class Login extends Component {
             </div>
 
             <div className="forget-pass">
-              <div className="flex-row">
+              <div className="flex-row show-pass">
                 <input
                   type="checkbox"
                   id="checkbox"

@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap");
-* {
-  font-family: "Roboto";
-  box-sizing: border-box;
+.show-pass {
+  cursor: pointer;
 }
-
 .login-container {
   display: flex;
   flex-direction: column;
@@ -18,14 +15,14 @@
   box-shadow: 2px 2px 25px 2px rgba(0, 0, 0, 0.1);
   width: 350px;
 }
-.img-control{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    padding: 10px;
+.img-control {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
 }
-.website-logo{
-    width: 55%;
+.website-logo {
+  width: 55%;
 }
 .input-controls {
   display: flex;
@@ -34,7 +31,7 @@
   margin-top: 10px;
 }
 .input-controls input {
-  padding: 10px 10px 10px 35px; 
+  padding: 10px 10px 10px 35px;
   border-radius: 5px;
   border: 1px solid rgba(128, 128, 128, 0.516);
   outline-color: rgba(0, 106, 255, 0.434);
@@ -46,11 +43,11 @@
 }
 .password-icon {
   position: absolute;
-  left: 10px; 
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(0, 0, 0, 0.5); 
-  pointer-events: none; 
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }
 
 .input-controls label {
