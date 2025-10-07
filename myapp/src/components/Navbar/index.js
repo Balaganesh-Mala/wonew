@@ -1,8 +1,8 @@
 import { Link, withRouter } from "react-router-dom";
 import Cookies from "js-cookie";
 
+import { HiOutlineHome } from "react-icons/hi2";
 import { AiOutlineLogout } from "react-icons/ai";
-import { GiBookshelf } from "react-icons/gi";
 import { CiSearch } from "react-icons/ci";
 
 import "./index.css";
@@ -60,8 +60,8 @@ const Navbar = (props) => {
         <div className="mobile-view ">
           <ul className="list-icons ">
             <li className="list-items">
-              <Link to="/courses" className="link">
-                <GiBookshelf />
+              <Link to="/" className="link-navbar">
+                <HiOutlineHome />
               </Link>
             </li>
             <li className="list-items">

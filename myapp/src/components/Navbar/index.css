@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -10,6 +8,7 @@
   padding: 10px;
   box-shadow: 2px 2px 25px 0px rgba(0, 0, 0, 0.1);
 }
+
 .nav-controls {
   width: 90%;
   display: flex;
@@ -72,6 +71,9 @@
   border: 1px solid rgba(128, 128, 128, 0.516);
   border-radius: 5px;
   outline-color: #0d282e;
+}
+.link-navbar{
+  color: black !important;
 }
 
 @media (max-width: 767px) {
