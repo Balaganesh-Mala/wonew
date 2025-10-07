@@ -26,7 +26,7 @@ const App = () => (
       <ProtectedRoute exact path="/material" component={StudyMaterial} />
       <ProtectedRoute exact path="/support" component={Support} />
       <ProtectedRoute path="/video/:courseName" component={VideoPage} />
-      <Route path="/not-found" component={NotFound} />
+      <Route exact path="/not-found" component={NotFound} />
       <Redirect to="/not-found" />
     </Switch>
   </BrowserRouter>
