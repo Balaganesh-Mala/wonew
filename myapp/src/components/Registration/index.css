@@ -16,16 +16,16 @@
   margin: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 25px 2px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 350px;
 }
-.img-control{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    padding: 10px;
+.img-control {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
 }
-.website-logo{
-    width: 55%;
+.website-logo {
+  width: 55%;
 }
 .input-controls {
   display: flex;
@@ -33,17 +33,16 @@
   row-gap: 5px;
   margin-top: 10px;
 }
-.user-name-input-box{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 5px;
+.user-name-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
 }
-.user-name-input-box .input-controls{
-    width: 49%;
-
+.user-name-input-box .input-controls {
+  width: 49%;
 }
 .input-controls input {
-  padding: 10px 10px 10px 35px; 
+  padding: 10px 10px 10px 35px;
   border-radius: 5px;
   border: 1px solid rgba(128, 128, 128, 0.516);
   outline-color: rgba(0, 106, 255, 0.434);
@@ -55,11 +54,11 @@
 }
 .password-icon {
   position: absolute;
-  left: 10px; 
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(0, 0, 0, 0.5); 
-  pointer-events: none; 
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }
 
 .input-controls label {
@@ -91,11 +90,11 @@
     margin: 5px;
     width: 80%;
   }
-  .user-name-input-box{
+  .user-name-input-box {
     display: flex;
     flex-direction: column;
   }
-  .user-name-input-box .input-controls{
+  .user-name-input-box .input-controls {
     width: 100%;
   }
 }

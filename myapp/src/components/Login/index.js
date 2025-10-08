@@ -69,7 +69,13 @@ class Login extends Component {
       <div className="login-container">
         <div className="form-controls">
           <form onSubmit={this.onsubmitForm}>
-            <div className="img-control"><img src="https://ik.imagekit.io/izqq5ffwt/IMG_20251004_004234.png?updatedAt=1759518799426" alt="website logo" className="website-logo"/></div>
+            <div className="img-control">
+              <img
+                src="https://ik.imagekit.io/izqq5ffwt/IMG_20251004_004234.png?updatedAt=1759518799426"
+                alt="website logo"
+                className="website-logo"
+              />
+            </div>
             <div className="input-controls">
               <label htmlFor="username">Username</label>
               <div className="input-box">
@@ -98,13 +104,14 @@ class Login extends Component {
             </div>
 
             <div className="forget-pass">
-              <div className="flex-row show-pass">
+              <div className="flex-row">
                 <input
                   type="checkbox"
                   id="checkbox"
                   onChange={this.onClickShowPassword}
+                  className="show-pass-container"
                 />
-                <label htmlFor="checkbox">Show password</label>
+                <label htmlFor="checkbox" className="show-pass-container">Show password</label>
               </div>
               <Link to="/forgetPassword">
                 <p>Forget password</p>
