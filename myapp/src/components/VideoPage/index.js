@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { TbArrowNarrowRight } from "react-icons/tb";
+import { FaCirclePlay } from "react-icons/fa6";
 
 import htmlTopics from "../data/HtmlTopics";
 import cssTopics from "../data/CssTopics";
@@ -85,12 +86,10 @@ const VideoPage = () => {
                       setSidebarVisible(false);
                     }}
                   >
-                    <img
-                      src="https://ik.imagekit.io/izqq5ffwt/video-media-player-flat-black-style.png"
-                      alt=""
-                      className="video-player-img"
-                    />
-                    
+                    <div className="video-player-container">
+                      <FaCirclePlay className="video-pay-icon" />
+                    </div>
+
                     <div className="video-topic-card">
                       <h1 className="topic-name">{topic.title}</h1>
                       <button type="button" className="view-btn">

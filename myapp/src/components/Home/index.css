@@ -72,7 +72,7 @@
 }
 .content {
   height: 100%;
-  overflow-x: hidden; /* ✅ ensures no side scroll inside main content */
+  overflow-x: hidden; 
 }
 
 .coures-container {
