@@ -30,7 +30,7 @@ const couresDetails = [
     title: "HTML & CSS",
     category: "FRENTEND",
     discription:
-      "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
+      "Learn how to build and style modern web pages using HTML for structure and CSS for design.",
     imgUtl:
       "https://ik.imagekit.io/izqq5ffwt/programming-background-collage.jpg?updatedAt=1759561173491",
   },
@@ -39,7 +39,7 @@ const couresDetails = [
     title: "Responsive Website",
     category: "FRENTEND",
     discription:
-      "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
+      "Master responsive design techniques to make websites look great on all devices and screen sizes.",
     imgUtl:
       "https://ik.imagekit.io/izqq5ffwt/Gemini_Generated_Image_dnsya8dnsya8dnsy.png?updatedAt=1759563289540",
   },
@@ -48,7 +48,7 @@ const couresDetails = [
     category: "BACKEND",
     title: "Python",
     discription:
-      "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
+      "Explore Python programming for web development, automation, and data handling with simple syntax.",
     imgUtl:
       "https://ik.imagekit.io/izqq5ffwt/Gemini_Generated_Image_cnhxeycnhxeycnhx.png?updatedAt=1759564622970",
   },
@@ -57,7 +57,7 @@ const couresDetails = [
     category: "FRENTEND",
     title: "JavaScript",
     discription:
-      "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
+      "Learn JavaScript to make your web pages interactive and dynamic with real-world coding projects.",
     imgUtl:
       "https://ik.imagekit.io/izqq5ffwt/Gemini_Generated_Image_l1cohul1cohul1co.png?updatedAt=1759565247805",
   },
@@ -66,7 +66,7 @@ const couresDetails = [
     category: "FRENTEND",
     title: "React js",
     discription:
-      "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
+      "Build powerful single-page web applications using React components, hooks, and state management.",
     imgUtl:
       "https://ik.imagekit.io/izqq5ffwt/Gemini_Generated_Image_f16psxf16psxf16p.png?updatedAt=1759566491555",
   },
@@ -75,7 +75,7 @@ const couresDetails = [
     category: "BACKEND",
     title: "Node js",
     discription:
-      "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
+      "Learn backend development with Node.js to build fast and scalable web servers using JavaScript.",
     imgUtl:
       "https://ik.imagekit.io/izqq5ffwt/Gemini_Generated_Image_hc2xifhc2xifhc2x.png?updatedAt=1759569792518",
   },
@@ -84,7 +84,7 @@ const couresDetails = [
     category: "BACKEND",
     title: "Express js",
     discription:
-      "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
+      "Discover Express.js, a fast Node.js framework for creating APIs and backend logic efficiently.",
     imgUtl:
       "https://ik.imagekit.io/izqq5ffwt/Gemini_Generated_Image_pe48pppe48pppe48.png",
   },
@@ -93,7 +93,7 @@ const couresDetails = [
     category: "DATABASE",
     title: "SQLite",
     discription:
-      "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
+      "Understand SQLite, a lightweight database engine ideal for small-scale applications and testing.",
     imgUtl:
       "https://ik.imagekit.io/izqq5ffwt/Gemini_Generated_Image_x9unx4x9unx4x9un.png",
   },
@@ -102,7 +102,7 @@ const couresDetails = [
     category: "DATABASE",
     title: "MongoDB",
     discription:
-      "Html stands for Hypertext Markup Language, a markup language used to structure and display content on the web",
+      "Learn MongoDB, a NoSQL database that stores data in flexible JSON-like documents for modern apps.",
     imgUtl:
       "https://ik.imagekit.io/izqq5ffwt/Gemini_Generated_Image_bciwyibciwyibciw.png",
   },

@@ -6,6 +6,7 @@
   position: relative;
 }
 
+/* ===== Sidebar ===== */
 .video-sidebar {
   width: 250px;
   background-image: linear-gradient(to right, #0d282e, #163f42);
@@ -49,17 +50,20 @@
 .video-sidebar li.active {
   background-color: rgba(128, 128, 128, 0.266);
 }
+
 .topic-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+
 .right-arrow {
   font-size: 28px;
   cursor: pointer;
   display: none;
 }
+
 .topic-heading {
   margin-bottom: 10px;
 }
@@ -70,6 +74,8 @@
   margin: 6px 0px;
   background-color: rgba(128, 128, 128, 0.266);
 }
+
+/* ===== Main Content ===== */
 .video-content {
   flex: 1;
   padding: 20px;
@@ -100,6 +106,7 @@
 .select-msg {
   font-size: 18px;
   color: #6b7280;
+  margin: 20px;
 }
 
 .toggle-sidebar-btn {
@@ -116,14 +123,80 @@
   cursor: pointer;
 }
 
+/* ===== Topic Cards Section ===== */
+.topics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.topics-card {
+  width: 250px;
+  background-color: #ffffff;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative; /* ✅ Needed for absolute button positioning */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.topics-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-player-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ✅ Keep card content neatly stacked */
+.video-topic-card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  padding-bottom: 40px;
+}
+
+.topic-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+/* ===== View Button (Bottom Right) ===== */
+.view-btn {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* red */
+  color: rgba(255, 0, 0, 0.655);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 10px; /* ✅ Now appears bottom-right */
+  right: 10px;
+  cursor: pointer;
+  gap: 4px;
+}
+
+/* ===== Responsive Design ===== */
 @media (max-width: 768px) {
-  .right-arrow{
-    display: block;
-  }
-  .toggle-sidebar-btn {
+  .right-arrow {
     display: block;
   }
 
+  .toggle-sidebar-btn {
+    display: block;
+  }
+  .video-topic-card {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
   .video-sidebar {
     position: fixed;
     top: 70px;
@@ -140,5 +213,21 @@
 
   .video-content {
     padding: 15px;
+  }
+
+  .topics-card {
+    width: 150px;
+  }
+
+  .topic-name {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .view-btn {
+    font-size: 10px;
+    padding: 4px 8px;
+    bottom: 8px;
+    right: 8px;
   }
 }

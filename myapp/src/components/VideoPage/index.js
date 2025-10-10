@@ -3,11 +3,12 @@ import { useParams } from "react-router-dom";
 import Navbar from "../Navbar";
 
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { TbArrowNarrowRight } from "react-icons/tb";
 
 import htmlTopics from "../data/HtmlTopics";
 import cssTopics from "../data/CssTopics";
 import jsTopics from "../data/JsTopics";
-import pythonTopics from "../data/PythonTopics"
+import pythonTopics from "../data/PythonTopics";
 
 import "./index.css";
 
@@ -43,7 +44,7 @@ const VideoPage = () => {
                 className={selectedVideo?.title === topic.title ? "active" : ""}
                 onClick={() => {
                   setSelectedVideo(topic);
-                  setSidebarVisible(false); 
+                  setSidebarVisible(false);
                 }}
               >
                 {topic.title}
@@ -72,7 +73,34 @@ const VideoPage = () => {
               </div>
             </div>
           ) : (
-            <p className="select-msg">Select a topic to start learning!</p>
+            <div>
+              <p className="select-msg">Select a topic to start learning!</p>
+              <ul className="topics-container">
+                {topics.map((topic, idx) => (
+                  <li
+                    key={idx}
+                    className="topics-card"
+                    onClick={() => {
+                      setSelectedVideo(topic);
+                      setSidebarVisible(false);
+                    }}
+                  >
+                    <img
+                      src="https://ik.imagekit.io/izqq5ffwt/video-media-player-flat-black-style.png"
+                      alt=""
+                      className="video-player-img"
+                    />
+                    
+                    <div className="video-topic-card">
+                      <h1 className="topic-name">{topic.title}</h1>
+                      <button type="button" className="view-btn">
+                        <p>view</p> <TbArrowNarrowRight />
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </main>
       </div>
